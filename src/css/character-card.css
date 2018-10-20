@@ -1,0 +1,13 @@
+.card{
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: stretch;
+}
+
+.character-image {
+  width: 10rem;
+}
+
+.character-name {
+  align-self: center;
+}

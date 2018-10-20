@@ -1,0 +1,9 @@
+.marvel-header{
+  display: flex;
+  flex-flow: row-reverse;
+  background-color: #010101
+}
+
+.marvel-logo {
+  width: 20rem;
+}

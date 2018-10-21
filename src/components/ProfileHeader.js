@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from "../logo.svg"
 
 const ProfileImage = props => (
   <img className="character-image" src={props.imgURL} alt={props.name + " image"}/>
@@ -10,9 +9,9 @@ const CharacterName = props => (
 )
 
 
-const headerCard = () => (
+const headerCard = props => (
   <div className="card">
-    <ProfileImage imgURL={logo} name="PAPAPA"/>
+    <ProfileImage imgURL="#" name="PAPAPA"/>
     <CharacterName name="PAPAPAP" />
   </div>
 )

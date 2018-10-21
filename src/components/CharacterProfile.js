@@ -1,11 +1,11 @@
 import React from "react"
-import header from "./ProfileHeader"
+import charHeader from "./ProfileHeader"
 
 
 
 const card = props => (
   <article>
-    {header()}
+    {charHeader()}
     <div>
       <p>DESCRIPTION</p>
       <img src="#" alt="imagem"/>

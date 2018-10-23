@@ -7,7 +7,19 @@ import CharDetail from './components/CharacterProfile'
 import MarvelHeader from "./components/Header"
 import ListProfiles from './components/ListProfiles'
 
+
+
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { data: {} }
+  }
+
+  componentDidMount() {console.log('yohohoh')
+      fetch('http://gateway.marvel.com/v1/public/characters?apikey=bd9d97899a2ceec5e69056ade7abdd85&ts=1&hash=428bd30e1f2da66f0da85f40e263d168')
+      .then(response => response.json())
+      .then(response => this.setState({'data':response}))
+    }
   render() {
     return (
       <div className="App">

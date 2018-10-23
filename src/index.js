@@ -8,7 +8,9 @@ import "./css/marvel-header.css";
 import "./css/character-card.css";
 import "./reset.css"
 import App from './App';
+
 import * as serviceWorker from './serviceWorker'; 
+
 
 
 ReactDOM.render(

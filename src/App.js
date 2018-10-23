@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import marvelHeader from "./components/Header"
-import Card from "./components/ProfileHeader"
+import React, { Component } from 'react'
 import './App.css';
+//import data from './marvel.json'
 import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom"
 import CharDetail from './components/CharacterProfile'
 import MarvelHeader from "./components/Header"
@@ -39,9 +38,11 @@ class App extends Component {
           <Route path="/List" component={List}/>
         </Switch>
     </Router>
-      </div>
-    );
+    </div>
+    )
   }
 }
+
+
 
 export default App;

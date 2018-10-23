@@ -4,7 +4,7 @@ const marvelLogo = require("../Marvel_Comics_logo.png")
 
 const marvelHeader = () => (
   <header className="marvel-header">
-    <img className="marvel-logo" src={marvelLogo} alt="Marvel logo"/>
+    <a href="/" style={{"backgroundColor":"#d8232a"}}><img className="marvel-logo" src={marvelLogo} alt="Marvel logo"/></a>
   </header>
 )
 

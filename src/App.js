@@ -20,7 +20,15 @@ class App extends Component {
       .then(response => response.json())
       .then(response => this.setState({'data':response}))
     }
+
   render() {
+    const Detail = (props) => <CharDetail data={this.state.data && this.state.data.data.results} {...props}/>
+    const List = () => <ListProfiles data={this.state.data && this.state.data.data.results} />
+    const Home = () => (
+      <Link to="/list">
+      Lista de personagens
+      </Link>
+    ) 
     return (
       <div className="App">
       <MarvelHeader/>

@@ -14,11 +14,13 @@ class App extends Component {
     this.state = { data: {} }
   }
 
-  componentDidMount() {console.log('yohohoh')
+  componentDidMount() {
       fetch('http://gateway.marvel.com/v1/public/characters?apikey=bd9d97899a2ceec5e69056ade7abdd85&ts=1&hash=428bd30e1f2da66f0da85f40e263d168')
       .then(response => response.json())
-      .then(response => this.setState({'data':response}))
-    }
+      .then(response => {
+        this.setState({'data':response})
+    })
+  }
 
   render() {
     const Detail = (props) => <CharDetail data={this.state.data && this.state.data.data.results} {...props}/>

@@ -7,7 +7,7 @@ export default class Card extends React.Component {
 
   render() {
     const data = this.props.data || []
-    const charData = data.find((element, index )=> Number(element.id) == Number(this.props.match.params.id) )
+    const charData = data.find((element, index )=> Number(element.id) === Number(this.props.match.params.id) )
     return (
     <article className="card-block">
       <CharHeader data={charData}/>

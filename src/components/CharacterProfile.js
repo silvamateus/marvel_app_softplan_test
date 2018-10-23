@@ -1,5 +1,5 @@
 import React from "react"
-import charHeader from "./ProfileHeader"
+import CharHeader from "./ProfileHeader"
 
 
 
@@ -23,6 +23,8 @@ export default class Card extends React.Component {
             ))
           }
         </div>      
-    </div>
+      </div>
   </article>
-)
+    )
+  }
+}
